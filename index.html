@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Survey form</title>
 </head>
 <body>
-    
+    <h1 id="title">Starter Pokemon Survey</h1>
+    <p id="description"></p>
+    <form id="survey-form" action="">
+        <label id="name-label" for="name">name</label>
+        <input id="name" type="name" placeholder="Enter your name" required>
+        <label id="email-label" for="email">email</label>
+        <input id="email" type="email" min="10" max="99" placeholder="Enter your email" required>
+        <label id="number-label" for="number">Age (optional)</label>
+        <input id="number" type="number" placeholder="Age">
+        <p>What team do you belong to?</p>
+        <select name="role" id="dropdown" required>
+            <option disabled selected value="">Select current team</option>
+            <option value="">Instinct</option>
+            <option value="">Mystic</option>
+            <option value="">Valor</option>
+        </select>
+        <p>What is the best starting pokemon?</p>
+        <label><input value="Charmander" type="radio" checked>Charmander</label>
+        <label><input value="Squirtle" type="radio" checked>Squirtle</label>
+        <label><input value="Bulbasur" type="radio" checked>Bulbasur</label>
+        <p>Sugerencias</p>
+        <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        <button id="submit"type="submit">Submit</button>
+    </form>
 </body>
 </html>
