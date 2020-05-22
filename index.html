@@ -8,7 +8,6 @@
     <title>Survey form</title>
 </head>
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <h1 id="title">Starter Pokemon Survey</h1>
     <p id="description">make pokemon great again!</p>
     <form id="survey-form" action="">
@@ -26,9 +25,15 @@
             <option name="user-team" value="">Valor</option>
         </select>
         <p>What is the best starting pokemon?</p>
-        <label><input name="user-pick" value="Charmander" type="radio" checked> Charmander</label>
-        <label><input name="user-pick" value="Squirtle" type="radio" > Squirtle</label>
-        <label><input name="user-pick" value="Bulbasur" type="radio" > Bulbasur</label>
+        <label><input name="user-pick" value="Charmander" type="radio" checked>  Charmander</label>
+        <label><input name="user-pick" value="Squirtle" type="radio" >  Squirtle</label>
+        <label><input name="user-pick" value="Bulbasur" type="radio" >  Bulbasur</label>
+        <p>What food you given to your pokemons?</p>
+        <label><input type="checkbox" name="food" value="Fruits">  Fruits</label>
+        <label><input type="checkbox" name="food" value="Vegetables">  Vegetables</label>
+        <label><input type="checkbox" name="food" value="Rocks">  Rocks</label>
+        <label><input type="checkbox" name="food" value="Pokemon food">  Pokemon food</label>
+        <label><input type="checkbox" name="food" value="Whatever...">  Whatever...</label>
         <p>Do you think there should be more starting pokemon?</p>
         <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Write which ones..."></textarea>
         <button id="submit"type="submit">Submit</button>
